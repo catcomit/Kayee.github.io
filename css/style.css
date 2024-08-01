@@ -50,8 +50,7 @@ section{
 	margin-bottom: -100px;
 }
 .container #one section {
-    margin-bottom: -180.5px;
-
+    margin-bottom: -195.5px;
 }
 
 .container-fluid {
@@ -128,6 +127,13 @@ section #one iframe {
     float: none;
     margin-right: 0%;
 }
+#one .ythero .yt-embed {
+    top: 0px;
+    bottom: 0px;
+    margin-top: -620px;
+
+}
+
 footer{
 	background: #ffffff;
 	width: 100%;
@@ -155,6 +161,7 @@ footer .text-left #highlight-button {
 }
 #six footer .text-left {
     margin-bottom: -50px;
+    margin-right: 425px;
 }
 
 
@@ -164,7 +171,7 @@ footer .text-left b {
 
 img:hover {5
   border: 2px solid #EAFFE;
-  box-shadow: 0px 0px 10px #AAFF00;
+    box-shadow: 0px 0px 10px #AAFF00;
 }
 
 footer a img:hover {
@@ -274,4 +281,58 @@ section div iframe:hover {
 	#check:checked ~ ul{
 		left: 0; 
 	}
+}
+button.btn-light{
+	margin-right: 50px;
+}
+
+.ythero iframe {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ythero:hover iframe {
+    opacity: 1;
+    margin-top: 0px;
+}
+.container-fluid .container #three {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.container-fluid .container #four {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.container-fluid .container #five {
+    margin-top: 5px;
+}
+.container #one .ythero {
+    bottom: -10px;
+
+
+}
+
+
+.container-fluid .container #two {
+
+}
+.container #six footer {
+}
+
+#six footer .fb-page {
+    margin-left: 564px;
+    margin-top: -65px;
+    max-width: 450px;
+    padding-top: 0px;
+    top: -38px;
+}
+footer a .img-fluid {
+    right: 0px;
+    padding-right: 0px;
+    margin-left: 350px;
+    margin-right: 6px;
+}
+#six footer .twitter-follow-button {
+    top: 0px;
+    padding-bottom: 0px;
 }
