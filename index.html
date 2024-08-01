@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kayee</title>
+    <!-- Bootstrap --><meta name="description" content="Avatar's Awakening is a linear 3D platformer where you become Kayee, a young Avatar with the power to bend water and earth. Explore the foggy swamp, solve environmental puzzles, engage in dynamic combat, and restore balance by healing the sacred Banyan Tree.">
+
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="container">
+	  <nav>
+	    <input type="checkbox" id="check">
+	    <label for="check" class="checkbtn">
+		  <i class="fas fa-bars"></i>
+		  </label>
+	    <div class="logo"><a id="sec-1" href="#one"><img src="images/kayee logo.png" alt="Kayee logo" width="200" class="img-fluid"></a></div>
+	    <ul>
+	      <li><a id="sec-2" href="#two">About</a></li>
+	      <li><a id="sec-3" href="#three">Concept</a></li>
+		      <li><a id="sec-4" href="#four">Development</a></li>
+		      <li><a id="sec-5" href="#five">GAmeplay</a></li>
+		      <li><a href="https://drive.google.com/file/d/1QkNyB08UpT_od7XbF0Wo84k9czXFFu--/view?usp=drive_link">Download</a></li>
+		      <li><a id="sec-6" href="#six">Contact</a></li>
+	    </ul>
+      </nav>
+      <div id="one" class="Hero">
+        <section> <img src="images/Kayee_hero.jpg" class="img-fluid" alt="hero"> </section>
+      </div>
+<div id="two" class="default first item">
+      <img src="images/About.jpg" class="img-fluid" alt="About">
+	  </div>
+		<div id="three" class="second item">
+        <img src="images/concept.jpg" class="img-fluid" alt="concept">
+	  </div>
+		<div id="four" class="third item">
+        <img src="images/Development.gif" class="img-fluid" alt="development">
+	  </div>
+	  <div id="five" class="fifth item">
+        <iframe class="yt-embed" src="https://www.youtube.com/embed/jm5akIEpPV0?si=9em_Rt_D0VPrFNfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+		<div id="six" class="sixth item">
+<footer>
+	<p class="text-left" style="font-size:1vw;"> </p>
+	&copy;2024 Team Kayee All Rights Reserved. <a href="https://www.youtube.com/channel/UCXQZU6Ig_Urc0AEHNiPbtPQ"> <img src="images/Youtube.png" alt="Image with highlight" width="100" class="img-fluid" aria-src="images/Youtube.png"></a> &nbsp; <b>Subscribe</b>
+	<a href="https://www.youtube.com/channel/UCXQZU6Ig_Urc0AEHNiPbtPQ"> <img src="images/xcom.svg" alt="Image with highlight" width="100" class="img-fluid" aria-src="images/Youtube.png"></a> &nbsp; <b>Follow</b>
+	
+	</footer>
+	 </div>
+	</div>
+  </div>
+  
+
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.3.1.js"></script>
+  <script>
+      
+        $('#sec-1').addClass("active");
+
+       
+        $("#sec-1").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#one").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	  
+
+        $("#sec-2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#two").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	  
+	  $("#sec-3").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#three").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	   $("#sec-4").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#four").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	  
+	   $("#sec-5").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#five").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	    
+	   $("#sec-6").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#six").offset().top - 66
+            }, 1000);
+            return false;
+        });
+	  
+	    $('#two').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-2").addClass("active");
+}, { offset: 101 });
+	  
+	      $('#three').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-3").addClass("active");
+}, { offset: 101 });
+	  
+	  	      $('#four').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-4").addClass("active");
+}, { offset: 101 });
+	  
+	    	      $('#five').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-5").addClass("active");
+}, { offset: 101 });
+	  
+	      	      $('#six').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-6").addClass("active");
+}, { offset: 101 });
+	  
+	  	    $('#one').waypoint(function() {
+    $(".container ul li").children().removeClass("active");
+    $("#sec-1").addClass("active");
+}, { offset: 101 });
+
+ 
+    </script>
+ 
+</body>
+</html>
