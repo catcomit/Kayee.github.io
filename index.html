@@ -12,6 +12,9 @@
 	  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z30qR/551TBt8D1ydZfgcJaPHsgSciTAQ9BUN605401m5D4APwV91dcmvU6mqK6yL9TqK9Fj0G4/Do/ygV3D2Hy/pzU5MDd4b0PXP1/8H+YWM/1En5zSm4j/X73/03OGRnPN80/l0AoD6x80+2T6u7000/7j/x+v9c+75w/d3/7pm7x0/77y+f/6c/1/2/3/4/5/6/7/8/9/0/9/8/7/6/5/4/3/2/1/0"   
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
   </head>
@@ -25,7 +28,7 @@
 	    </label>
 	    <div class="logo"><a id="sec-1" href="#one"><img src="images/kayee logo.png" alt="Kayee logo" width="200" class="img-fluid"></a></div>
 	    <ul>
-	      <li><a id="sec-2" href="#two">About</a></li>
+	      <li ><a id="sec-2" href="#two">About</a></li>
 	      <li><a id="sec-3" href="#three">Concept</a></li>
 		      <li><a id="sec-4" href="#four">Development</a></li>
 		      <li><a id="sec-5" href="#five">GAmeplay</a></li>
@@ -34,7 +37,7 @@
 	    </ul>
       </nav>
       <div id="one" class="Hero">
-        <section> <img src="images/Kayee_hero.jpg" class="img-fluid" alt="hero"></section><div class="ythero"><iframe class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/EkZ4LyKugw4?si=-J8DBVdjtANwad9a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>></iframe></div>
+        <section> <img src="images/Kayee_hero.jpg" class="img-fluid" alt="hero"></section><div id="ythero" class="ythero"><iframe id="clock1"class="yt-embed" width="560" height="315" src="https://www.youtube.com/embed/EkZ4LyKugw4?si=-J8DBVdjtANwad9a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
       </div>
 <div id="two" class="default first item">
       <img src="images/About.jpg" class="img-fluid" alt="About">
@@ -48,23 +51,36 @@
 	  <div id="five" class="fifth item">
         <iframe class="yt-embed" src="https://www.youtube.com/embed/jm5akIEpPV0?si=9em_Rt_D0VPrFNfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-		<div id="six" class="sixth item">
-<footer>
-	<p class="text-left" style="font-size:1vw;">
-	&copy;2024 Team Kayee All Rights Reserved.</p> <a href="https://www.youtube.com/channel/UCXQZU6Ig_Urc0AEHNiPbtPQ"> <img src="images/Youtube.png" alt="Image with highlight" width="100" class="img-fluid" aria-src="images/Youtube.png"></a> 
-	<a href="https://twitter.com/catcomit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @catcomit</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> &nbsp;
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0" nonce="UZCnZxiF"></script> 
-		<div class="fb-page" data-href="https://www.facebook.com/catcomit" data-tabs="follow" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/catcomit" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/catcomit">CatComit</a></blockquote></div>
-	
-	</footer>
-	 </div>
-	</div>
+</div>
   </div>
-  
+<div class="social-panel-container">
+    <!-- Toggle Button -->
+    <button class="social-panel-toggle">☰</button>
+  <div class="social-panel">
+    <a href="https://www.youtube.com/channel/UCXQZU6Ig_Urc0AEHNiPbtPQ" class="social-icon"><img src="images/youtube-logotype-svgrepo-com (1).svg" alt="yt"></a>
+    <a href="https://web.facebook.com/catcomit" class="social-icon"><img src="images/facebook-logo-svgrepo-com (1).svg" alt="fb"></a>
+	 <a href="https://x.com/catcomit" class="social-icon"><img src="images/icons8-twitterx (1).svg" alt="xcom"></a>
+    
+</div>
+	</div>
 
-  <script src="js/popper.min.js"></script> 
-  <script src="js/bootstrap-4.3.1.js"></script>
+  <div id="six" class="sixth item">
+    <footer>
+      <div class="footer-container">
+        <p class="text-left copyright">&copy;2024 Team Kayee All Rights Reserved.</p>
+        <ul class="social-icons">
+          <li><a href="https://www.youtube.com/channel/UCXQZU6Ig_Urc0AEHNiPbtPQ"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://web.facebook.com/catcomit"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://x.com/catcomit"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        <ul class="soft-icons">
+          <li><a href="https://www.unrealengine.com/en-US"><img src="images/UE-Logo.svg" class="img-fluid" alt="unreal logo"></a></li>
+          <li><a href="https://www.reallusion.com/character-creator/download.html"><img src="images/character-creator-4.png" class="img-fluid" alt="ch4 logo"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/popper.min.js"></script> <script src="js/bootstrap-4.3.1.js"></script>
   <script>
       
         $('#sec-1').addClass("active");
@@ -141,7 +157,20 @@
     $(".container ul li").children().removeClass("active");
     $("#sec-1").addClass("active");
 }, { offset: 101 });
+	  
 
+
+	  
+
+
+
+
+
+
+
+
+	  
+	  
 </script>
  
 </body>

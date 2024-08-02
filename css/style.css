@@ -69,7 +69,6 @@ section{
     margin-left: 483px;
     text-align: center;
     color: #FBFBFB;
-    background-image: url(../images/play-button.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 51% 0%;
@@ -134,42 +133,9 @@ section #one iframe {
 
 }
 
-footer{
-	background: #ffffff;
-	width: 100%;
-	height: 200px;
-	padding: 10px 90px;
-	box-sizing: border-box;
-}div footer .text-left {
-    margin-top: 100px;
-}
-footer .text-left #highlight-button {
-    background-color: #FFFFFF;
-
-}
-footer .text-left #highlight-button {
-    background-color: #FFFFFF;
-}
-footer .text-left #highlight-button {
-
-}
-#six footer .img-fluid {
 
 
-}
-.container #six footer {
-}
-#six footer .text-left {
-    margin-bottom: -50px;
-    margin-right: 425px;
-}
-
-
-
-footer .text-left b {
-}
-
-img:hover {5
+img:hover {
   border: 2px solid #EAFFE;
     box-shadow: 0px 0px 10px #AAFF00;
 }
@@ -187,8 +153,52 @@ section div  iframe {
 }
 
 section div iframe:hover {
-  opacity: 1; 
+  opacity: 1;
 }
+
+}
+li a .img-fluid {
+    min-height: 0rem;
+    max-width: 0rem;
+}
+li a .img-fluid {
+    width: 4rem;
+}
+.social-icons li a {
+
+}
+footer .footer-container .social-icons {
+    padding-left: 0px;
+    margin-left: -74px;
+}
+
+
+
+
+
+	
+
+
+
+@media (max-width: 768px) {
+	iframe#clock1 { pointer-events: none; }
+    iframe#clock1 {
+        opacity: 1;
+    }
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -264,6 +274,8 @@ section div iframe:hover {
 	    left: -100%;
 		text-align: center;
 		transition: all .5s;
+		opacity: 75%;
+		
 	}
 	nav ul li{
 		display: block;
@@ -285,6 +297,7 @@ section div iframe:hover {
 button.btn-light{
 	margin-right: 50px;
 }
+
 
 .ythero iframe {
     opacity: 0;
@@ -316,23 +329,281 @@ button.btn-light{
 .container-fluid .container #two {
 
 }
-.container #six footer {
+
+
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
 
-#six footer .fb-page {
-    margin-left: 564px;
-    margin-top: -65px;
-    max-width: 450px;
-    padding-top: 0px;
-    top: -38px;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-bottom: 1px solid #fff;
 }
-footer a .img-fluid {
-    right: 0px;
-    padding-right: 0px;
-    margin-left: 350px;
-    margin-right: 6px;
+
+nav .logo {
+    padding-top: 8px;
+    float: left;
 }
-#six footer .twitter-follow-button {
-    top: 0px;
-    padding-bottom: 0px;
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #000000;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background: #060A00;
+    border-radius: 6px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/Kayee_hero.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+}
+
+.container-fluid {
+    background-color: #060A00;
+    background-repeat: repeat-y;
+}
+
+.container-fluid .container .text-center {
+    font-family: Arial;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0.1px;
+}
+
+.container section .btn.btn-lg {
+    margin-top: 417px;
+    margin-left: 483px;
+    text-align: center;
+    color: #FBFBFB;
+    background-image: url(../images/play-button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 51% 0%;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ythero {
+    margin: 0 auto; /* Center the video */
+    text-align: center; /* Center the video */
+}
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 10px 20px;
+    }
+    
+    nav ul {
+        display: none; /* Hide ul initially */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .checkbtn {
+        display: block; /* Show menu button */
+    }
+
+    #check:checked ~ ul {
+        display: flex; /* Show the menu when checked */
+        position: absolute;
+        top: 100px; /* Below the nav */
+        width: 100%;
+        background: #ffffff;
+        padding: 20px 0;
+    }
+
+    .container section .btn.btn-lg {
+        margin: 20px 0; /* Reduce margin on smaller devices */
+        display: block; /* Stack all blocks */
+        width: 80%; /* Make button take less width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    section {
+        margin-top: 80px; /* Adjust the top margin */
+    }
+}
+
+footer {
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background-color: #f2f2f2; /* Optional: Set background color */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute elements evenly */
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.copyright {
+  font-size: 0.8rem; /* Adjust font size as needed */
+  margin-bottom: 0.5rem; /* Add some space between copyright and icons */
+}
+
+.social-icons,
+.soft-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display icons horizontally */
+}
+
+.social-icons li,
+.soft-icons li {
+  margin: 0 0.5rem; /* Adjust spacing between icons */
+}
+
+.social-icons i,
+.soft-icons img {
+  font-size: 1.2rem; /* Adjust icon size as needed */
+  width: auto; /* Icons scale based on font size */
+  height: auto; /* Images scale proportionally */
+}
+
+/* Media Queries for Different Screen Sizes (Adjust breakpoints as needed) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center elements vertically */
+  }
+
+  .copyright {
+    text-align: center; /* Center copyright text on small screens */
+  }
+
+  .social-icons,
+  .soft-icons {
+    justify-content: center; /* Center icons horizontally on small screens */
+  }
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icons li {
+  margin: 0 0.5rem;
+}
+
+.social-icons i {
+  font-size: 34px; /* Adjust font size for Font Awesome icons */
+}
+
+.social-icons img {
+  width: 30px; /* Adjust width and height for image-based icons */
+  height: 30px;
+}
+
+.text-left.copyright {
+  font-size: 20px; /* Adjust the size as needed */
+}
+
+
+
+ 
+
+.social-panel-container {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+    .social-panel {
+      display: none; /* Hidden by default */
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+      transition: opacity 0.3s ease;
+      opacity: 0; /* Start with the panel invisible */
+    }
+
+    .social-panel-container:hover .social-panel {
+      display: block; /* Show panel when hovering over the container */
+      opacity: 1; /* Make panel fully visible */
+    }
+
+    .social-panel-toggle {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .social-icon {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+      padding: 5px;
+    }
+
+    .social-icon:hover {
+      background: #555;
+      border-radius: 3px;
+    }
