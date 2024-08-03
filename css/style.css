@@ -42,16 +42,11 @@ nav ul li a:hover{
 }
 section{
     width: 100%;
-    height: 100vh;
     background-image: url("../images/Kayee_hero.png");
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
-	margin-bottom: -100px;
 }
-.container #one section {
-    margin-bottom: -195.5px;
-}
+
 
 .container-fluid {
     background-color: #060A00;
@@ -77,11 +72,7 @@ section{
     text-transform: none;
     text-decoration: none;
 }
-.container section .yt-embedsm {
-    float: none;
-    padding-left: 401px;
-    padding-top: 150px;
-}
+
 .row .col-xl-4 .btn.btn-success {
     font-family: arial;
     display: inline;
@@ -94,44 +85,14 @@ section{
 }
 
 
-.container section .text-center {
 
-
-}
-.container section iframe {
-    margin-top: 500px;
-}
  .yt-embed {
     aspect-ratio: 16 / 9;
     width: 100%;
 	height: auto;
   }
 
-section #one .yt-embedsm {
-}
-.container section #one {
 
-
-}
-section #one iframe {
-    margin-left: 252px;
-    margin-bottom: -52px;
-}
-
-
-
-
-.container-fluid .container iframe {
-    clear: none;
-    float: none;
-    margin-right: 0%;
-}
-#one .ythero .yt-embed {
-    top: 0px;
-    bottom: 0px;
-    margin-top: -620px;
-
-}
 
 
 
@@ -143,23 +104,16 @@ img:hover {
 footer a img:hover {
   transform: scale(1.1);
 }
-#one .container iframe {
-    margin-left: 233px;
-}
 
-section div  iframe {
-  opacity: 0.5; 
-  transition: opacity 0.3s ease-in-out; 
-}
 
 section div iframe:hover {
   opacity: 1;
 }
 
-}
+
 li a .img-fluid {
-    min-height: 0rem;
-    max-width: 0rem;
+    min-height: auto;
+    max-width: 4rem;
 }
 li a .img-fluid {
     width: 4rem;
@@ -169,8 +123,37 @@ li a .img-fluid {
 }
 footer .footer-container .social-icons {
     padding-left: 0px;
-    margin-left: -74px;
+    margin-left: -216px;
 }
+#one #ythero #clock1 {
+    width: 35rem;
+    height: 19.688rem;
+    margin-top: -23.438rem;
+    display: flex;
+    padding-right: 0px;
+    margin-left: 16.438rem;
+}
+
+footer .footer-container .soft-icons {
+
+
+
+}
+
+
+
+.container #one #ythero {
+    padding-bottom: 0px;
+    height: 49rem;
+}
+#six {
+
+
+
+}
+
+
+
 
 
 
@@ -181,10 +164,7 @@ footer .footer-container .social-icons {
 
 
 @media (max-width: 768px) {
-	iframe#clock1 { pointer-events: none; }
-    iframe#clock1 {
-        opacity: 1;
-    }
+
 }
 
 	
@@ -224,6 +204,7 @@ footer .footer-container .social-icons {
             overflow: hidden;
             padding-bottom: 100%; /* 16:9 aspect ratio */
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -231,6 +212,7 @@ footer .footer-container .social-icons {
             width: 560;
             height: 560;
         }
+
 
 
         @media (max-width: 768px) {
@@ -308,6 +290,25 @@ button.btn-light{
     opacity: 1;
     margin-top: 0px;
 }
+
+@media only screen and (max-width: 768px) {
+    .ythero iframe {
+        display: none; /* Hide the iframe on mobile */
+    }
+    
+    /* Remove the hover effect entirely in mobile view */
+    .ythero:hover iframe {
+        opacity: 0; /* Or you can just omit this if display: none is set */
+    }
+
+    .ythero { 
+        pointer-events: none; /* Disable all pointer events on .ythero */
+    }
+}
+
+
+
+
 .container-fluid .container #three {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -319,19 +320,15 @@ button.btn-light{
 .container-fluid .container #five {
     margin-top: 5px;
 }
-.container #one .ythero {
-    bottom: -10px;
 
-
-}
 
 
 .container-fluid .container #two {
-
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
-@charset "utf-8";
 body {
     margin: 0;
     padding: 0;
@@ -385,13 +382,32 @@ nav ul li a:hover {
 
 section {
     width: 100%;
-    height: 100vh;
     background-image: url("../images/Kayee_hero.png");
     background-size: cover;
     background-position: center;
     margin-top: 100px;
-    margin-bottom: -100px;
+    height: 261.9px;
 }
+
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 768px) {
+  section {
+    width: 100%;    /* Styles for medium screens */
+    height: 785px;
+  }
+}
+
+/* For large screens */
+@media only screen and (min-width: 992px) {
+  section {
+    /* Styles for large screens */
+    width: 100%;
+    height: 785px;
+  }
+}
+
+
 
 .container-fluid {
     background-color: #060A00;
@@ -433,7 +449,7 @@ section {
 }
 
 .ythero {
-    margin: 0 auto; /* Center the video */
+   
     text-align: center; /* Center the video */
 }
 
@@ -481,7 +497,7 @@ section {
     }
 
     section {
-        margin-top: 80px; /* Adjust the top margin */
+
     }
 }
 
@@ -536,6 +552,10 @@ footer {
   .soft-icons {
     justify-content: center; /* Center icons horizontally on small screens */
   }
+.soft-icons li a {
+
+}
+
 }
 
 .social-icons {
@@ -581,11 +601,19 @@ footer {
       opacity: 0; /* Start with the panel invisible */
     }
 
-    .social-panel-container:hover .social-panel {
+.social-panel-container{
+	display: none;
+}
+
+@media (max-width: 768px){
+	.social-panel-container{
+		display: block;
+	}
+	.social-panel-container:hover .social-panel {
       display: block; /* Show panel when hovering over the container */
       opacity: 1; /* Make panel fully visible */
     }
-
+}
     .social-panel-toggle {
       background: #333;
       color: #fff;
